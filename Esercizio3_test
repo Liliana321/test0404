@@ -1,0 +1,40 @@
+""" Andare a creare una funzioni che si occupi di salvare i dati dell'utente, 
+andare a creare una funzione che si occupi di fare il login dell'utente, Andare a 
+creare un funzioni che modifichi i dati dell'utente solo se questi sono già 
+stati creati  / salvati e solo dopo il login.  
+Andare a creare un menu che concateni le tre 
+funzioni precedenti e permetta di ripetere il ciclo a più utenti diversi. """
+
+utenti=[]
+
+def nomeutente():
+    nome=input("inserisci nome")
+    password=input("inserisci password")
+    utenti.append({'name':nome,'password':password})
+    
+def login():
+    print( "Benvenuto. Effettuare il login")
+    nome=input("inserisci nome")
+    password=input("inserisci password")
+    if nome in utenti and utenti[nome]['password'] == password:
+        print(f"benvenuto {nome}")
+        return nome 
+    else:
+        print("Errore")
+        return None
+
+def menu():
+    while True:
+        print("1. Salva i dati dell'utente")
+        print("2. Effettua il login")
+        
+        scelta = int(input("Scegli un'opzione (1/2): "))
+        match scelta:
+            case 1:
+                nomeutente()
+            case 2:
+                login()    
+            case _:
+                break
+
+menu()
