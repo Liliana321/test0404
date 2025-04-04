@@ -1,0 +1,52 @@
+Test Venerdi 4 Aprile 
+
+4. Cos'è Una classe? A che serve il self?
+
+La classe in python viene definita da 'class' e rappresentano dei concetti fondamentali 
+nella programmazione OOP, in Python è semplicemente un modo per creare oggetti per definire la realta.
+All'interno di essa è possibile rappresentare attributi e metodi. 
+Per definire una 'class' è fondamentale definire il costruttore e il metodo, infatti il self 
+rappresenta la tecnica per legarsi alla classe costruita e viene utilizzato principalmente 
+nel metodo di istanza che, attraverso il self, accede ai dati e all'istanza costruita.  
+
+6. Cos'è una collezione/aggregazione? Quali sono quelle che conosci? come si differenziano?
+Le aggregazione in python fanno riferimento ai seguenti concetti:
+- liste []: possono contenere diversi valori e sono modificabili. è possibile applicare delle funzioni come 
+len() -> lunghezza lista 
+append()-> aggiungere un elemento alla fine della lista 
+remove()-> rimuovere un elemento in particolare
+altri 
+
+- tuple (): si differenziano dalle liste per il fatto di essere immutabili, ovvero una volta creata la lista 
+non è possibile effettuare alcuna variazione. non sono usate spesso, si preferisce usarle per descrivere, per esempio,
+una persona (caratteristiche della persona)
+- dizionari {}: all'interno troviamo la coppia chiave:valore 
+- insiemi set(): a differenza delle liste, non contengono duplicati. E' possibile applicare le seguenti 
+operazioni:
+input: due insiemi 
+unione-> output: insieme composto da tutti elementi sia in comune che non 
+intersezione-> output: insieme composto dai solo elementi in comune 
+differenza -> output: insieme composta dai solo elementi presenti nell'insieme1 e non nell' insieme2 
+differenza_simmetrica->  outplut: insieme composto da elementi presenti nei due insiemi, ma non comuni, ovvero {1,2,3} e {1,2,4}. 
+Applicando la differenza simmetrica otteniamo  {3,4} 
+
+12. Quali sono le tre regole fondamentali? Cosa fanno?
+I concetti fondamentali alla base degli OOP sono: 
+- incapsulamento: principio di nascondere il funzionamento, esponendo solo l'output e il necessario. per esempio in python vi sono funzione incorporate 
+per cui l'utente la richiama senza la necessità di conoscere il codice relativo alla funzione. 
+- ereditarietà: permette ad una classe di ereditare le proprietà da un'altra classe.
+- polimorfismo: gli oggetti di diversa natura vengono utilizzati allo stesso modo. 
+
+14. Cosa sono le funzioni ? 
+le funzioni sono blocchi di codice utilizzati per una particolare operazione. viene definita a partire da 'def' 
+in seguito nome della funzione e (). All'interno delle () è possibile definire i vari parametri. i parametri 
+sono considerati come variabili che passato dati alla funzione. le funzioni si dividono in:
+- funzione di esecuzione e funzione di ritorno 
+Perché incarnano passivamente il concetto di astrazione? Cos'è l'astrazione nella programmazione ?
+
+16. Cos'è il concetto di controllo di flusso? Quali famiglie ne fanno parte? Spiega gli elementi di queste famiglie teoricamente
+
+nel controllo di flusso si riferisce alla esecuzione di determinate istruzioni. le due macro categorie sono:
+- ciclo: for e while. la differenza tra le due e che for si per iterare un elemento su una seuqenza, a priori si conosce il numero di volte che si vuole iterare. While invece si usa quando bisogna iterare un numero 
+di volte sconosciuto, rischio che non cicli all'infinito -> bisogna imporre una condizione di uscita 
+_condizioni : if, else,elif e match 
