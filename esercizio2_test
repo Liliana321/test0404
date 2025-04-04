@@ -1,0 +1,21 @@
+
+# Andare a creare un sistema ripetibile che si occupa di gestire 
+# la lunghezza delle stringhe e salvarle, l'utente potrà continuare a inserire dati finché la stringa inserita e più lunga della precedente, alla fine stamperà l'insieme delle stringhe date in
+# input divise da virgole e quante stringhe ha inserito.
+
+
+stringhe = []
+
+lunghezza_iniziale = 0
+
+while True:
+    nuova_stringa = input("Inserisci una stringa  ")
+    
+    if nuova_stringa == "":
+        break
+    
+    elif len(nuova_stringa) > lunghezza_iniziale:
+        stringhe.append(nuova_stringa)
+        lunghezza_iniziale = len(nuova_stringa)
+    else:
+        print("La stringa precedente  è più lunga")
